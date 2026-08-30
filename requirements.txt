@@ -1,0 +1,9 @@
+datasets
+huggingface_hub
+transformers
+requests
+langdetect         
+openai              
+google-genai        
+python-dotenv      
+Pillow              

@@ -1,0 +1,110 @@
+{
+  "_comment": "One entry per evaluated model. `hf_id` / `tokenizer_id` left empty must be filled in before that model can be run or measured.",
+  "models": [
+    {
+      "name": "qolda",
+      "family": "qolda",
+      "hf_id": "",
+      "tokenizer_id": "",
+      "endpoint": "http://127.0.0.1:8000",
+      "served_name": "qolda",
+      "dual_mode": true,
+      "think": {"chat_template_kwargs": {"enable_thinking": true}},
+      "no_think": {"chat_template_kwargs": {"enable_thinking": false}}
+    },
+    {
+      "name": "qwen3.5-4b",
+      "family": "qwen3.5",
+      "hf_id": "Qwen/Qwen3.5-4B",
+      "tokenizer_id": "Qwen/Qwen3.5-4B",
+      "endpoint": "http://127.0.0.1:8001",
+      "served_name": "qwen3.5-4b",
+      "dual_mode": true,
+      "think": {"chat_template_kwargs": {"enable_thinking": true}},
+      "no_think": {"chat_template_kwargs": {"enable_thinking": false}}
+    },
+    {
+      "name": "qwen3.5-9b",
+      "family": "qwen3.5",
+      "hf_id": "Qwen/Qwen3.5-9B",
+      "tokenizer_id": "Qwen/Qwen3.5-9B",
+      "endpoint": "http://127.0.0.1:8002",
+      "served_name": "qwen3.5-9b",
+      "dual_mode": true,
+      "think": {"chat_template_kwargs": {"enable_thinking": true}},
+      "no_think": {"chat_template_kwargs": {"enable_thinking": false}}
+    },
+    {
+      "name": "gemma-4-e2b-it",
+      "family": "gemma-4",
+      "hf_id": "google/gemma-4-E2B-it",
+      "tokenizer_id": "google/gemma-4-E2B-it",
+      "endpoint": "http://127.0.0.1:8003",
+      "served_name": "gemma-4-e2b-it",
+      "dual_mode": true,
+      "think": {"chat_template_kwargs": {"enable_thinking": true}},
+      "no_think": {"chat_template_kwargs": {"enable_thinking": false}}
+    },
+    {
+      "name": "gemma-4-e4b-it",
+      "family": "gemma-4",
+      "hf_id": "google/gemma-4-E4B-it",
+      "tokenizer_id": "google/gemma-4-E4B-it",
+      "endpoint": "http://127.0.0.1:8004",
+      "served_name": "gemma-4-e4b-it",
+      "dual_mode": true,
+      "think": {"chat_template_kwargs": {"enable_thinking": true}},
+      "no_think": {"chat_template_kwargs": {"enable_thinking": false}}
+    },
+    {
+      "name": "llama-3.1-8b-instruct",
+      "family": "llama-3.1",
+      "hf_id": "meta-llama/Llama-3.1-8B-Instruct",
+      "tokenizer_id": "meta-llama/Llama-3.1-8B-Instruct",
+      "endpoint": "http://127.0.0.1:8005",
+      "served_name": "llama-3.1-8b-instruct",
+      "dual_mode": false,
+      "think": null,
+      "no_think": {}
+    },
+    {
+      "name": "llama-3.2-3b-instruct",
+      "family": "llama-3.2",
+      "hf_id": "meta-llama/Llama-3.2-3B-Instruct",
+      "tokenizer_id": "meta-llama/Llama-3.2-3B-Instruct",
+      "endpoint": "http://127.0.0.1:8006",
+      "served_name": "llama-3.2-3b-instruct",
+      "dual_mode": false,
+      "think": null,
+      "no_think": {}
+    },
+    {
+      "name": "kazllm-8b",
+      "family": "kazllm",
+      "hf_id": "",
+      "tokenizer_id": "",
+      "endpoint": "http://127.0.0.1:8007",
+      "served_name": "kazllm-8b",
+      "dual_mode": false,
+      "think": null,
+      "no_think": {}
+    },
+    {
+      "name": "sherkala-8b",
+      "family": "sherkala",
+      "hf_id": "",
+      "tokenizer_id": "",
+      "endpoint": "http://127.0.0.1:8008",
+      "served_name": "sherkala-8b",
+      "dual_mode": false,
+      "think": null,
+      "no_think": {}
+    }
+  ],
+  "proprietary": [
+    {"name": "gpt-4o", "api_model": "gpt-4o-2024-08-06", "provider": "openai"},
+    {"name": "gpt-5", "api_model": "gpt-5", "provider": "openai"},
+    {"name": "gemini-2.5-flash", "api_model": "gemini-2.5-flash", "provider": "google"},
+    {"name": "gemini-3.1-flash", "api_model": "gemini-3.1-flash", "provider": "google"}
+  ]
+}
